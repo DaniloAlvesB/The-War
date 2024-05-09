@@ -1,0 +1,34 @@
+.body {
+    background-color: rgb(31, 31, 31);
+}
+
+.list {
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    color: rgb(31, 31, 31);
+    display: flex; justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .25s;
+    text-decoration: none;
+    width: 100%;
+}
+.list:hover{
+    background-color: rgb(196, 196, 196);
+}
+
+.item {
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    color: rgb(31, 31, 31);
+    display: flex; justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .25s;
+    text-decoration: none;
+    width: 100%;
+}

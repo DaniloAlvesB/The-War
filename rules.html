@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The War - Regras</title>
+</head>
+
+<link rel="stylesheet" href="./css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<body class="body text-light">
+
+    <div id="title" class="d-flex flex-row align-items-center text-center justify-content-center p-3 w-100">
+        <a class="btn text-light d-flex align-items-center" href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+            </svg>
+        </a>
+        <h2>Regras</h2>
+    </div>
+    <div id="main" class="bg-light p-3 rounded-3 m-2">
+
+        <!-- START -->
+        <p>
+            <div class="d-inline-flex gap-1 w-100">
+                <a class="list" data-bs-toggle="collapse" data-bs-target="#startCard" aria-expanded="false" aria-controls="startCard">
+                    Iniciando
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse text-dark" id="startCard">
+                <div class="card card-body">
+                    <p>The War é um jogo focado em conquista de territórios e gestão de recursos. Acompanhe abaixo as regras básicas para começar o jogo.</p>
+                    <p>O responsável pode se sentir à vontade para altrar quaisquer regras.</p>
+
+                    <p>
+                        <b>Sobre o jogo</b>
+                        <p>
+                            Neste jogo você é um rei e precisa construir seu império para acabar com as forças locais e se tornar soberano.
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </p>
+        
+        <!-- ACTIONS -->
+        <p>
+            <div class="d-inline-flex gap-1 w-100">
+                <a class="list" data-bs-toggle="collapse" data-bs-target="#actionsCard" aria-expanded="false" aria-controls="actionsCard">
+                    Ações
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse text-dark" id="actionsCard">
+                <div class="card card-body">
+                    <p>
+                        Lista de ações:
+                    </p>
+                    <ul>
+                        <li>
+                            <b>Movimentar rei:</b>
+                            Com esta ação você pode movimentar seu rei pelas casas adjacentes em formato de mais ( + );
+                        </li>
+                        <li>
+                            <b>Posicionar tenda:</b>
+                            Posicione uma tenda na casa atual ou adjacente (em formato de mais) onde o rei ou alguma tropa está posicionada;
+                        </li>
+                        <li>
+                            <b>Movimentar tropa:</b>
+                            De acordo com a velocidade da tropa você pode mandá-la até uma posição especifica e ela chegará na próxima rodada;
+                        </li>
+                        <li>
+                            <b>Criar tropa:</b>
+                            Você pode criar tropas à partir de uma tenda consumindo alguns recursos;
+                        </li>
+                        <li>
+                            <b>Posicionar muro:</b>
+                            Você pode consumir 5 pedras para posicionar um muro que tampa 1 casa do tabuleiro. Muros tem 5 pontos de vida.
+                            Recomenda-se que utilizem um papel recortado do tamanho da casa do tabuleiro para marcar os muros, podendo excrever nele a vida atual do mesmo.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </p>
+
+        <!-- TROOPS AND COMBAT -->
+        <p>
+            <div class="d-inline-flex gap-1 w-100">
+                <a class="list" data-bs-toggle="collapse" data-bs-target="#troopsCard" aria-expanded="false" aria-controls="troopsCard">
+                    Tropas e combate
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse text-dark" id="troopsCard">
+                <div class="card card-body">
+                    <p>
+                        Você poderá criar e movimentar tropas pelo mapa, elas te ajudarão a conquitar território e coletar recursos.
+                    </p>
+                    <p>
+                        <b>Dano de tropas: </b>
+                        Toda tropa dá 1 de dano por ataque e o que define seu acerto é o lançamento de um dado D6, o número do dado tem que ser maior que a velocidade da tropa.
+                        Se a tropa for corpo-a-corpo ela consegue acertar outra tropa corpo-a-corpo que não seja montada com um bônus de 1 ponto. <br>
+                        Tropas que atacam a distância tem um bônus de 1 para atacar tropas paradas.
+                    </p>
+                    <p>
+                        <b>Ataques de oportunidade: </b>
+                        Todos os ataques de oportunidade tem acerto garantido.
+                    </p>
+                    <p>
+                        <b>Ataques de cavaleiros montados: </b>
+                        Se a tropa estiver montada ela pode atacar em movimento da seguinte forma:
+                        no seu truno ele pode definir uma posição para se locomover e, caso tenha alguma tropa inimiga nos quadrantes caminhados ele os atacará dobrando o dano caso acerte.
+                    </p>
+                    <p>
+                        <b>Ataques corpo-a-corpo: </b>
+                        Ataques corpo-a=copor acontecem em qualquer casa adjacente à casa da tropa (incluindo diagonais).
+                    </p>
+                    <p>
+                        <b>Ataques à distância: </b>
+                        As tropas que atacam à distância tem um range definido, dentro dele é possível acar qualquer tropa. Se a tropa que ataca à distância estiver colada em um muro ela o ignora em seu ataque.
+                    </p>
+                    <p>
+                        <b>Tropas</b> <br>
+                        Confira abaixo todas as tropas disponíveis:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <b>Rei (jogador):</b>
+                            <table class="table table-striped-columns">
+                                <tr>
+                                    <th>Vida</th>
+                                    <th>5</th>
+                                </tr>
+                                <tr>
+                                    <th>Velocidade</th>
+                                    <th>1 casa p/ turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Valor</th>
+                                    <th>Não comprável</th>
+                                </tr>
+                                <tr>
+                                    <th>Recurtamento</th>
+                                    <th>0 turnos</th>
+                                </tr>
+                                <tr>
+                                    <th>Capacidade</th>
+                                    <th>
+                                        2 itens
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Alcance</th>
+                                    <th>
+                                        2 casas
+                                    </th>
+                                </tr>
+                            </table>
+                            O rei ataca com sua lança e atravessa todos os inimigos em linha reta à posição de ataque, menos nas diagonais.
+                        </li>
+                        <li>
+                            <b>Cavaleiro comum:</b>
+                            <table class="table table-striped-columns">
+                                <tr>
+                                    <th>Vida</th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Velocidade</th>
+                                    <th>1 casa p/ turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Valor</th>
+                                    <th>1 alimento</th>
+                                </tr>
+                                <tr>
+                                    <th>Recurtamento</th>
+                                    <th>1 turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Capacidade</th>
+                                    <th>
+                                        1 item
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Alcance</th>
+                                    <th>
+                                        1 casa
+                                    </th>
+                                </tr>
+                            </table>
+                            Os cavaleiros são trobas básicas que são úteis para exploração e coleta de recursos no garal.
+                        </li>
+                        <li>
+                            <b>Cavaleiro montador:</b>
+                            <table class="table table-striped-columns">
+                                <tr>
+                                    <th>Vida</th>
+                                    <th>3</th>
+                                </tr>
+                                <tr>
+                                    <th>Velocidade</th>
+                                    <th>3 casa p/ turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Valor</th>
+                                    <th>5 alimentos</th>
+                                </tr>
+                                <tr>
+                                    <th>Recurtamento</th>
+                                    <th>2 turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Capacidade</th>
+                                    <th>
+                                        1 item
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Alcance</th>
+                                    <th>
+                                        1 casa
+                                    </th>
+                                </tr>
+                            </table>
+                            Estes são cavaleiros montados à cavalos que podem cobrir uma grande área em pouco tempo.
+                        </li>
+                        <li>
+                            <b>Mensageiro:</b>
+                            <table class="table table-striped-columns">
+                                <tr>
+                                    <th>Vida</th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Velocidade</th>
+                                    <th>5 casa p/ turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Valor</th>
+                                    <th>3 alimentos</th>
+                                </tr>
+                                <tr>
+                                    <th>Recurtamento</th>
+                                    <th>1 turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Capacidade</th>
+                                    <th>
+                                        3 itens
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Alcance</th>
+                                    <th>
+                                        1 casa
+                                    </th>
+                                </tr>
+                            </table>
+                            Homens montados à cavalor que correm apenas para distribuir itens. Eles não podem explorar, mas podem carregar até 3 items por vez.
+                        </li>
+                        <li>
+                            <b>Arqueiro:</b>
+                            <table class="table table-striped-columns">
+                                <tr>
+                                    <th>Vida</th>
+                                    <th>1</th>
+                                </tr>
+                                <tr>
+                                    <th>Velocidade</th>
+                                    <th>2 casa p/ turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Valor</th>
+                                    <th>3 alimentos</th>
+                                </tr>
+                                <tr>
+                                    <th>Recurtamento</th>
+                                    <th>1 turno</th>
+                                </tr>
+                                <tr>
+                                    <th>Capacidade</th>
+                                    <th>
+                                        1 itens
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Alcance</th>
+                                    <th>
+                                        3 casas
+                                    </th>
+                                </tr>
+                            </table>
+                            Homens montados à cavalor que correm apenas para distribuir itens. Eles não podem explorar, mas podem carregar até 3 items por vez.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </p>
+
+        <!-- MAP AND EXPLORATION -->
+        <p>
+            <div class="d-inline-flex gap-1 w-100">
+                <a class="list" data-bs-toggle="collapse" data-bs-target="#mapCard" aria-expanded="false" aria-controls="mapCard">
+                    Mapa e exploração
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse text-dark" id="mapCard">
+                <div class="card card-body">
+                    <p>
+                        <b>Mapa</b>
+                        <p>
+                            O mapa é dividido em 400 blocos, formando um tabuleiro 20x20. Por ele serão distribuídos, sem que os jogadores saibam e antes da partida começar, 
+                            recursos aleatórios.
+                        </p>
+                    </p>
+                    <p>
+                        <b>Exploração</b>
+                        <p>
+                            No turno de cada jogador ele poderá executar 5 ações, e nunca poderá repetir uma mesma ação mais de 3 vezes por turno.
+                            Toda vez que avançar por um local inexplorado o jogador poderá posicionar uma tenda, desde que seja em uma das cadas adjacentes.
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </p>
+
+        <!-- QUADRANT -->
+        <p>
+            <div class="d-inline-flex gap-1 w-100">
+                <a class="list" data-bs-toggle="collapse" data-bs-target="#quadrantCard" aria-expanded="false" aria-controls="quadrantCard">
+                    Partes e jogadores
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse text-dark" id="quadrantCard">
+                <div class="card card-body">
+                    <p>
+                        The War pode ser jogado com 2 ou 4 jogadores dispostos em 2 ou 4 partes do tabuleiro.
+                    </p>
+                    <p>
+                        <b>Divisão em 2 partes (2 a 4 jogares)</b>
+                        <p>
+                            Essa divisão é recomendado para jogos de 2 a 4 jogadores, onde, com 4 jogadores, sejam compostos 2 times de 2 jogadores.
+                        </p>
+                        <p>
+                            Para divisão em 2 partes é necessário traçar uma linha vertical no meio do tabuleiro, dividindo-o em partes iguais.
+                        </p>
+                    </p>
+                    <p>
+                        <b>Divisão em 4 partes (3 a 8 jogadores)</b>
+                        <p>
+                            Essa divisão é recomendado para jogos de 4 a 8 jogadores, onde, com 8 jogadores, sejam compostos 4 times de 2 jogadores.
+                        </p>
+                        <p>
+                            Para divisão em 4 partes é necessário traçar uma linha vertical no meio do tabuleiro, dividindo-o em partes iguais e, após isso, traçar uma linha horizontal cortando o tabuleiro no meio novamente.
+                        </p>
+                    </p>
+                    <p>
+                        Após a divisão cada jogar pode escolher ou sortear uma subdivisão do mapa.
+                    </p>
+                    <p class="text-danger">
+                        *Caso o jogo for ocorrer utilizando 3 de 4 partes (3 ou 6 jogadores) é recomendado que seja feito um acordo para que o jogador que faça 
+                        fronteira com os outros dois tenha alguma vantagem inicial.
+                    </p>
+                </div>
+            </div>
+        </p>
+
+
+        <!-- TENT -->
+        <p>
+            <div class="d-inline-flex gap-1 w-100">
+                <a class="list" data-bs-toggle="collapse" data-bs-target="#tentCard" aria-expanded="false" aria-controls="tentCard">
+                    Tendas
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse text-dark" id="tentCard">
+                <div class="card card-body">
+                    <p>
+                        <b>O que são tendas?</b>
+                        <p>
+                            As tendas são peças coloridas e cada jogador possui 6 delas. Elas são responsáveis
+                            por permitir que o jogadore efetua algumas ações, ações essas que só são permitidas a partir de uma tenda.
+                        </p>
+                    </p>
+                    <p>
+                        <b>Iniciando com as tendas</b>
+                        <p>
+                            Cada jogardor inicia com 1 tenda posicionada no uma repartição do mapa escolhida anteriormente.
+                            Após isso o jogador poderá posicionar as demais tendas à sua vontade de acordo com a quantidade explorada do mapa.
+                            <br>
+                            Nas tendas serão os pontos de saídas para novas tropas.
+                        </p>
+                    </p>
+                    
+                </div>
+            </div>
+        </p>
+
+        <!-- PLAYING -->
+        <p>
+            <div class="d-inline-flex gap-1 w-100">
+                <a class="list" data-bs-toggle="collapse" data-bs-target="#playingCard" aria-expanded="false" aria-controls="playingCard">
+                    Jogando
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="collapse text-dark" id="playingCard">
+                <div class="card card-body">
+
+                    <p>
+                        <b>Inicaindo o jogo</b>
+                        <p>
+                            Para iniciar cada jogador deverá definir sua posição em sua região e não falar ela para ninguém, recomenda-se que essa posição seja anotada para comprar a escolha. 
+                            <br>
+                            Após isso o jogador adversário deverá selecionar e distribuir uma quantidade de recursos no local do seu oponente, fazendo assim com que a escolha seja aleatória, sem sofrer o viés da posição selecionada pelo dono da região.
+                            Pode-se também utilizar um mapa de recursos pré-definidos antes mesmo da seleção, esse mapa pode ser criado por um terceiro e só revelado após a escolha da posição da primeira tenda.
+                        </p>
+                    </p>
+                    <p>
+                        <b>Dificuldade e duração</b>
+                        <p>
+                            Quanto mais recursos forem distribuídos nas regiões, mais fácil e rápido será o jogo. É importante que, caso os recursos sessem, utilizem o site ou um esquema préviamente especificado.
+                        </p>
+                    </p>
+                    <p>
+                        <b>Durante a partida</b>
+                        <p>
+                            Durante a partira é necessário prestar atenção nos movimentos e no número de ações executadas, é dever de cada um garantir a ordem.
+                        </p>
+                    </p>
+                    <p>
+                        <b>Finalizando o jogo</b>
+                        <p>
+                            Ganha o jogo aquele que alcançar a soberania no tabuleiro ou nos recursos, ou se apenas 1 rei estiver vivo.
+                        </p>
+                    </p>
+                    
+                </div>
+            </div>
+        </p>
+
+
+    </div>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
